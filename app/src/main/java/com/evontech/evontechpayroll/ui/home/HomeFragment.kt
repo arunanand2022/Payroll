@@ -11,7 +11,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -30,12 +29,13 @@ import com.evontech.evontechpayroll.ui.checkout.ProceedCheckoutViewModel
 import com.evontech.evontechpayroll.utils.util
 import com.evontech.evontechpayroll.utils.util.Companion.USERFIRSTNAME
 import com.evontech.evontechpayroll.utils.util.Companion.USERLASTNAME
-import com.evontech.evontechpayroll.utils.util.Companion.USERNAME
+import com.evontech.evontechpayroll.utils.util.Companion.USERPHONE
 import com.evontech.evontechpayroll.utils.util.Companion.getCurrentDate
 import com.evontech.evontechpayroll.utils.util.Companion.getMonthAndYear
 import com.evontech.evontechpayroll.utils.util.Companion.getStringPreferences
 import com.evontech.evontechpayroll.utils.util.Companion.getToDateAfterDays
 import com.evontech.evontechpayroll.viewModel.EventAndAnnounceViewModel
+import java.net.URLEncoder
 import java.text.ParseException
 import java.util.*
 import kotlin.math.abs
@@ -184,9 +184,9 @@ class HomeFragment : Fragment() , EventViewPagerAdapter.RemoveItemInterface {
            eventAdapter.addData(it)
 
         }else{
+            eventAndAnnounceViewModel.addEventDetails(EventAndAnnouncementModel(null,"Birthday","15-Sep-2022","https://forms.gle/n5DZv21tLRD6QHWq8","Happy Birth Day","https://picsum.photos/seed/picsum/200/300","",true))
             eventAndAnnounceViewModel.addEventDetails(EventAndAnnouncementModel(null,"Group Medical Insurance Policy Renewal","14-Oct-2022","https://forms.gle/n5DZv21tLRD6QHWq8","All who are interested to renew/enroll into the StarHealth Group Medical Policy are requested to fill the Form in the link above. Expected Policy Period: Nov 2, 2022 to Nov 1, 2023.","https://picsum.photos/seed/picsum/200/300",""))
             eventAndAnnounceViewModel.addEventDetails(EventAndAnnouncementModel(null,"Employee Details Updation","30-Sep-2022","https://forms.gle/HQZfkUTXx4sC21te9","Kindly help us to stay updated with some key information. Click on the link to fill the form, if any of your personal contact details have changed over the past 1 year.","https://picsum.photos/seed/picsum/200/300","",true))
-            eventAndAnnounceViewModel.addEventDetails(EventAndAnnouncementModel(null,"Birthday","15-Sep-2022","https://forms.gle/n5DZv21tLRD6QHWq8","Happy Birth Day","https://picsum.photos/seed/picsum/200/300","",true))
         }
 
       })
@@ -245,6 +245,8 @@ class HomeFragment : Fragment() , EventViewPagerAdapter.RemoveItemInterface {
             //Toast.makeText(requireContext(), "Good Night", Toast.LENGTH_SHORT).show()
         }
     }
+
+
 
 
 }
