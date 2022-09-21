@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">EvonTechPayroll</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Evon Technologies</string>
+    <string name="nav_header_subtitle">sales@evontech.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_logout">Logout</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_proceed_checkout">Proceed Checkout</string>
+    <string name="menu_leave">Leave</string>
+    <string name="Day">Day</string>
+    <string name="CheckIn">Check In</string>
+    <string name="CheckOut">Check Out</string>
+    <string name="Hours">Hours</string>
+    <string name="total_hours">Total Hours</string>
+    <string name="total_hours_count">00.00</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="comp_detail"><![CDATA[Technology is a means to an end - You get the means correct and the ends will follow. We at Evon realize the implication of this statement. We have the people, the technology and the solutions to exceed the expectations & deliver projects on cost, on time, every time.]]></string>
+    <string name="comp_name">"Evon Technologies "</string>
+    <string name="payroll">Payroll</string>
+    <string name="login_payroll">Login-Payroll</string>
+    <string name="what_evon_docs">What Evon Docs</string>
+    <string name="policy">Policy</string>
+    <string name="website">www.evontech.com</string>
+    <string name="sign_evon">SIGN IN TO EVON PAYROLL</string>
+    <string name="signin">Sign In</string>
+    <string name="user_name">Enter your username</string>
+    <string name="remember_me">Remember me</string>
+    <string name="password">Enter your password</string>
+    <string name="hours_worked">Hours worked</string>
+    <string name="project_name">Project Name</string>
+    <string name="comment">Comment</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="enable_gps">Enable Gps</string>
+    <string name="required_for_this_app">Required for this App</string>
+    <string name="enable_now">Enable now</string>
+    <string name="project">Project</string>
+    <string name="role">Role</string>
+    <string name="action">Action</string>
+    <string name="menu_attendance">Attendance</string>
+    <string name="menu_payslip">Pay Slip</string>
+    <string name="menu_userprofile">Profile</string>
+    <string name="search">Search</string>
+    <string name="no">No.</string>
+    <string name="announcements"><![CDATA[Events & Announcements]]></string>
+    <string name="event_heading">Event Heading</string>
+    <string name="requested_by">Requested By</string>
+    <string name="url">Url</string>
+    <string name="description">Pescription</string>
+    <string name="submit">Submit</string>
+    <string name="yourWish">Enter your wish message</string>
+    <array name="project_name">
+        <item>Select Project</item>
+        <item>Aamir Notta_Beyond LED</item>
+        <item>Learning</item>
+        <item>Other</item>
+    </array>
+    <array name="stage">
+        <item>Select Stage</item>
+        <item>UI-Design</item>
+        <item>Coding</item>
+        <item>Testing</item>
+        <item>Other</item>
+    </array>
+
+    <array name="month">
+        <item>Select Month</item>
+        <item>JAN</item>
+        <item>FEB</item>
+        <item>MAR</item>
+        <item>APR</item>
+        <item>MAY</item>
+        <item>JUN</item>
+        <item>JUL</item>
+        <item>AUG</item>
+        <item>SEP</item>
+        <item>OCT</item>
+        <item>NOV</item>
+        <item>DEC</item>
+    </array>
+    <array name="years">
+        <item>Select Year</item>
+        <item>"2022"</item>
+        <item>"2021"</item>
+        <item>"2020"</item>
+    </array>
+
+
+</resources>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.checkout.ProceedCheckoutFragment">
+    <EditText
+        android:id="@+id/et_hours_worked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="@dimen/margin_ten"
+        android:layout_marginRight="@dimen/margin_ten"
+        android:layout_marginTop="@dimen/margin_twenty"
+        android:hint="@string/hours_worked"
+        android:background="@drawable/edittext_rect_bg"
+        android:textSize="@dimen/textsize_sixteen"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Spinner
+        android:id="@+id/spin_project_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_ten"
+        android:layout_marginRight="@dimen/margin_ten"
+        android:layout_marginTop="@dimen/margin_twenty"
+        android:background="@drawable/edittext_rect_bg"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:entries="@array/project_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_hours_worked" />
+    <Spinner
+        android:id="@+id/spin_stage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_ten"
+        android:layout_marginRight="@dimen/margin_ten"
+        android:layout_marginTop="@dimen/margin_twenty"
+        android:background="@drawable/edittext_rect_bg"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:entries="@array/stage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spin_project_name" />
+    <EditText
+        android:id="@+id/et_comment"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:ems="10"
+        android:layout_marginLeft="@dimen/margin_ten"
+        android:layout_marginRight="@dimen/margin_ten"
+        android:layout_marginTop="@dimen/margin_twenty"
+        android:hint="@string/comment"
+        android:background="@drawable/edittext_rect_bg"
+        android:textSize="@dimen/textsize_sixteen"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:maxLines="10"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spin_stage" />
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_ten"
+        android:layout_marginRight="@dimen/margin_ten"
+        android:layout_marginTop="@dimen/margin_twenty"
+        android:text="@string/save"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_comment" />
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_ten"
+        android:layout_marginRight="@dimen/margin_ten"
+        android:layout_marginTop="@dimen/margin_twenty"
+        android:text="@string/cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_submit"
+        app:layout_constraintTop_toBottomOf="@+id/et_comment" />
+
+    <LinearLayout
+        android:id="@+id/ll_part1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cancel"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_twenty"
+        android:layout_marginLeft="@dimen/margin_ten"
+        android:layout_marginRight="@dimen/margin_ten"
+        android:background="@drawable/gray_background_design">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/button">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center_vertical"
+                android:text="@string/project"
+                android:paddingLeft="@dimen/padding_five"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_weight=".8"
+                android:paddingLeft="@dimen/padding_five"
+                android:textSize="@dimen/textsize_twelve"
+                android:text="@string/role"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_weight="1.5"
+                android:textSize="@dimen/textsize_twelve"
+                android:paddingLeft="@dimen/padding_five"
+                android:text="@string/comment"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_weight=".6"
+                android:paddingLeft="@dimen/padding_five"
+                android:textSize="@dimen/textsize_twelve"
+                android:text="@string/Hours"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_weight=".6"
+                android:textSize="@dimen/textsize_twelve"
+                android:paddingLeft="@dimen/padding_five"
+                android:text="@string/action"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_checkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           />
+
+        <Button
+            android:id="@+id/btn_checkout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/CheckOut"
+            android:layout_margin="@dimen/margin_ten"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

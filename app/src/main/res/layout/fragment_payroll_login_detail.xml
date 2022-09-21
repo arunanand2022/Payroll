@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.login.PayrollLoginDetailFragment">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comp_name"
+            android:textSize="@dimen/textsize_twenty"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/margin_fifty"/>
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/payroll"
+            android:textColor="@color/white"
+            android:paddingLeft="@dimen/padding_five"
+            android:paddingRight="@dimen/padding_five"
+            android:background="@drawable/bg_ovel_design"
+            app:layout_constraintEnd_toEndOf="@+id/textView1"
+            app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comp_detail"
+            android:padding="@dimen/margin_twenty"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <Button
+            android:id="@+id/btn_switch_to_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_payroll"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:drawableEnd="@drawable/ic_login_icon"
+            android:textSize="@dimen/textsize_twelve"
+            style="@style/leaf"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"/>
+
+        <Button
+            android:id="@+id/btn_docs"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_fifty"
+            android:text="@string/what_evon_docs"
+            android:textSize="@dimen/textsize_twelve"
+            app:layout_constraintEnd_toStartOf="@+id/button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_switch_to_login" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_fifty"
+            android:text="@string/policy"
+            android:textAllCaps="false"
+            android:textSize="@dimen/textsize_twelve"
+            app:layout_constraintStart_toEndOf="@+id/btn_docs"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_switch_to_login" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/website"
+            android:gravity="center"
+            android:textSize="@dimen/textsize_twenty"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+

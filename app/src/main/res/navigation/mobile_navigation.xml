@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.evontech.evontechpayroll.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_checkout"
+        android:name="com.evontech.evontechpayroll.ui.checkout.ProceedCheckoutFragment"
+        android:label="@string/menu_proceed_checkout"
+        tools:layout="@layout/fragment_proceed_checkout" />
+
+    <fragment
+        android:id="@+id/nav_leave"
+        android:name="com.evontech.evontechpayroll.ui.leave.LeaveFragment"
+        android:label="@string/menu_leave"
+        tools:layout="@layout/fragment_leave" />
+    <fragment
+        android:id="@+id/nav_attendance"
+        android:name="com.evontech.evontechpayroll.ui.attendance.AttendanceFragment"
+        android:label="Attendance"
+        tools:layout="@layout/fragment_attendance" />
+    <fragment
+        android:id="@+id/nav_paySlip"
+        android:name="com.evontech.evontechpayroll.ui.payslip.PaySlipFragment"
+        android:label="Pay Slip"
+        tools:layout="@layout/fragment_pay_slip" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.evontech.evontechpayroll.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>
